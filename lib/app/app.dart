@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import '../core/router/routes.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../core/router/app_router.dart';
+import '../core/router/routes.dart';
 
 class MainApp extends StatelessWidget {
   const MainApp({super.key, required this.appRouter});
@@ -10,10 +11,15 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      initialRoute: Routes.onboarding,
-      onGenerateRoute: appRouter.onGenerateRoute,
+    return ScreenUtilInit(
+      designSize: const Size(375, 812),
+      minTextAdapt: true,
+      splitScreenMode: true,
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        initialRoute: Routes.onboarding,
+        onGenerateRoute: appRouter.onGenerateRoute,
+      ),
     );
   }
 }
