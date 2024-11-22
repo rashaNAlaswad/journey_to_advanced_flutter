@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'widgets/onboarding_description.dart';
-import 'widgets/get_started_button.dart';
+
 import '../../core/helper/spacing.dart';
 import 'widgets/doctor_image_and_text.dart';
+import 'widgets/get_started_button.dart';
 import 'widgets/logo_and_doctor.dart';
+import 'widgets/onboarding_description.dart';
 
 class OnboardingScreen extends StatelessWidget {
   const OnboardingScreen({super.key});

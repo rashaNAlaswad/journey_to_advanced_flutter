@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import '../../../core/helper/extensions.dart';
+import '../../../core/router/routes.dart';
 import '../../../core/utils/app_colors.dart';
 import '../../../core/utils/app_styles.dart';
 
@@ -8,6 +10,9 @@ class GetStartedButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
+      onPressed: () {
+        context.pushNamed(Routes.login);
+      },
       style: ElevatedButton.styleFrom(
         backgroundColor: AppColors.primaryBlue,
         shape: RoundedRectangleBorder(
@@ -16,7 +21,6 @@ class GetStartedButton extends StatelessWidget {
         maximumSize: const Size(double.infinity, 52),
         tapTargetSize: MaterialTapTargetSize.shrinkWrap,
       ),
-      onPressed: () {},
       child: Text(
         'Get Started',
         style: AppStyles.font16WhiteMedium,
