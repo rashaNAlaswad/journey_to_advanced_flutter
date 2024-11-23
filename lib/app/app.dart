@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:journey_to_advanced_flutter/core/theme/app_theme.dart';
+import '../core/theme/app_theme.dart';
 
 import '../core/router/app_router.dart';
 import '../core/router/routes.dart';
