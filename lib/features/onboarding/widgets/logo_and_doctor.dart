@@ -3,7 +3,7 @@ import 'package:flutter_svg/svg.dart';
 
 import '../../../core/helper/spacing.dart';
 import '../../../core/utils/app_assets.dart';
-import '../../../core/utils/app_styles.dart';
+import '../../../core/utils/app_text_styles.dart';
 
 class LogoAndDoctor extends StatelessWidget {
   const LogoAndDoctor({super.key});
@@ -17,7 +17,7 @@ class LogoAndDoctor extends StatelessWidget {
         horizontalSpace(8),
         Text(
           'DocDoc',
-          style: AppStyles.font24BlackBold,
+          style: AppTextStyles.font24BlackBold,
         ),
       ],
     );

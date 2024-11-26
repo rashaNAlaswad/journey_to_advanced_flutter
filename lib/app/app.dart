@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import '../core/theme/app_theme.dart';
 
 import '../core/router/app_router.dart';
 import '../core/router/routes.dart';
+import '../core/theme/app_theme.dart';
 
 class MainApp extends StatelessWidget {
   const MainApp({super.key, required this.appRouter});

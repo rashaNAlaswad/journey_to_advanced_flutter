@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../core/utils/app_styles.dart';
+import '../../../core/utils/app_text_styles.dart';
 
 class OnboardingDescription extends StatelessWidget {
   const OnboardingDescription({
@@ -11,7 +11,7 @@ class OnboardingDescription extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       'Manage and schedule all of your medical appointments easily with Docdoc to get a new experience.',
-      style: AppStyles.font10GrayRegular,
+      style: AppTextStyles.font10GrayRegular,
       textAlign: TextAlign.center,
     );
   }

@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+
 import '../../../core/helper/extensions.dart';
 import '../../../core/router/routes.dart';
 import '../../../core/utils/app_colors.dart';
-import '../../../core/utils/app_styles.dart';
+import '../../../core/utils/app_text_styles.dart';
 
 class GetStartedButton extends StatelessWidget {
   const GetStartedButton({super.key});
@@ -23,7 +24,7 @@ class GetStartedButton extends StatelessWidget {
       ),
       child: Text(
         'Get Started',
-        style: AppStyles.font16WhiteMedium,
+        style: AppTextStyles.font16WhiteMedium,
       ),
     );
   }
