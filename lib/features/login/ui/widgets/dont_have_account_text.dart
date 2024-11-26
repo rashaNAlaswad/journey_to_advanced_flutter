@@ -1,6 +1,7 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import '../../../core/utils/app_styles.dart';
+
+import '../../../../core/utils/app_text_styles.dart';
 
 class DontHaveAccountText extends StatelessWidget {
   const DontHaveAccountText({super.key});
@@ -13,11 +14,11 @@ class DontHaveAccountText extends StatelessWidget {
         children: [
           TextSpan(
             text: '''Don't have an account?''',
-            style: AppStyles.font13DarkBlueRegular,
+            style: AppTextStyles.font13DarkBlueRegular,
           ),
           TextSpan(
             text: ' Sign Up',
-            style: AppStyles.font13BlueSemiBold,
+            style: AppTextStyles.font13BlueSemiBold,
             recognizer: TapGestureRecognizer()..onTap = () {},
           ),
         ],

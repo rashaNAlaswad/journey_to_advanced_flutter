@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../utils/app_colors.dart';
-import '../utils/app_styles.dart';
+import '../utils/app_text_styles.dart';
 
 class AppTextFormField extends StatelessWidget {
   const AppTextFormField(
@@ -17,7 +17,8 @@ class AppTextFormField extends StatelessWidget {
       this.suffixIcon,
       this.backgroundColor,
       this.controller,
-      required this.validator, this.keyboardType});
+      required this.validator,
+      this.keyboardType});
 
   final EdgeInsetsGeometry? contentPadding;
   final InputBorder? focusedBorder;
@@ -36,6 +37,7 @@ class AppTextFormField extends StatelessWidget {
     return TextFormField(
       controller: controller,
       keyboardType: keyboardType ?? TextInputType.text,
+      autovalidateMode: AutovalidateMode.onUserInteraction,
       decoration: InputDecoration(
         isDense: true,
         contentPadding: contentPadding ??
@@ -70,14 +72,14 @@ class AppTextFormField extends StatelessWidget {
           ),
           borderRadius: BorderRadius.circular(16.0),
         ),
-        hintStyle: hintStyle ?? AppStyles.font14LightGrayRegular,
+        hintStyle: hintStyle ?? AppTextStyles.font14LightGrayRegular,
         hintText: hintText,
         suffixIcon: suffixIcon,
         fillColor: backgroundColor ?? AppColors.moreLightGray,
         filled: true,
       ),
       obscureText: isObscureText ?? false,
-      style: AppStyles.font14DarkBlueMedium,
+      style: AppTextStyles.font14DarkBlueMedium,
       validator: (value) {
         return validator(value);
       },
