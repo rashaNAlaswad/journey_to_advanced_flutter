@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:journey_to_advanced_flutter/features/signup/cubit/signup_cubit.dart';
 
 import '../../features/home/home_screen.dart';
 import '../../features/login/cubit/login_cubit.dart';
 import '../../features/login/ui/login_screen.dart';
 import '../../features/onboarding/onboarding_screen.dart';
+import '../../features/signup/cubit/signup_cubit.dart';
 import '../../features/signup/ui/signup_screen.dart';
 import '../di/dependency_injection.dart';
 import 'routes.dart';

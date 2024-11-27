@@ -1,12 +1,13 @@
 import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
+
 import '../../../core/networking/api_error_model.dart';
 import '../data/models/sign_up_request_body.dart';
-import '../data/repository/dignup_repository.dart';
+import '../data/repository/signup_repository.dart';
 
-part 'signup_state.dart';
 part 'signup_cubit.freezed.dart';
+part 'signup_state.dart';
 
 class SignupCubit extends Cubit<SignupState> {
   SignupCubit(this.signupRepository) : super(const SignupState.initial());
