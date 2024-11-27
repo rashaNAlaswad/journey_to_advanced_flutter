@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../../../../core/helper/app_regex.dart';
 
+import '../../../../core/helper/app_regex.dart';
 import '../../../../core/helper/spacing.dart';
 import '../../../../core/widgets/app_text_form_field.dart';
 import '../../cubit/login_cubit.dart';
