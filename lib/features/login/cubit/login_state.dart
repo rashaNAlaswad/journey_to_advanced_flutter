@@ -1,4 +1,5 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
+
 import '../../../core/networking/api_error_model.dart';
 
 part 'login_state.freezed.dart';
